@@ -86,14 +86,10 @@
       data:fd,
       success: function(response){
         console.log("thsi is response",response.error)
-        if (response.error != ''){
-            console.log(response.error)
-        }
-        else{
-          const sText =`We got Your Request, we will connect to you soon ${response.name}`
-          handleAlerts('success',sText)
-        }
+       
         
+        const sText =`We got Your Request, we will connect to you soon ${response.name}`
+        handleAlerts('success',sText)
 
         setTimeout(()=>{
 
