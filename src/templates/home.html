@@ -86,6 +86,9 @@
       data:fd,
       success: function(response){
         console.log("thsi is response",response.error)
+        if (response.error != ''){
+            console.log(response.error)
+        }
         const sText =`We got Your Request, we will connect to you soon ${response.name}`
         handleAlerts('success',sText)
 
